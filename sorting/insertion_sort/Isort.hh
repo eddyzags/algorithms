@@ -30,15 +30,16 @@ class Isort {
   int key_;
 
   // Insert values in the array
-  void insert(int index, std::vector<int> &array);
+  void insert(const int index, std::vector<int> &array);
 };
 
 // Insert the value at index - 1 to index
-void Isort::insert(int index, std::vector<int> &array) {
+void Isort::insert(const int index, std::vector<int> &array) {
   array[index] = array[index - 1];
   array[index - 1] = key_;
 }
 
+// Sort an array using insertion sort algorithm
 void Isort::sort(std::vector<int> &array) {
   int count;
   int rightOfCount;
