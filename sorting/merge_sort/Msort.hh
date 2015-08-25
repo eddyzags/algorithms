@@ -12,7 +12,7 @@
 #define MSORT_HH_
 
 #include <vector>
-#include <cmath> // for floor()
+#include <cmath>  // for floor()
 
 class Msort {
  public:
@@ -25,6 +25,11 @@ class Msort {
   // Sorting member function that calls the recursive function
   void sort(std::vector<int> &array) {
     Msort::mergeSort(array, 0, array.size() - 1);
+  }
+
+  // Number of guess for a given input size
+  int number_of_guesses(int size) {
+    return size % 2 == 0 ? log2(size) : log2(size + 1);
   }
 
  private:
@@ -82,8 +87,8 @@ void Msort::merge(std::vector<int> &array, int p, int q, int r) {
 void Msort::mergeSort(std::vector<int> &array, int p, int r) {
   int q;
 
-  if (p < r) { // Base case
-    q = floor((p + r) / 2); // the result is rounded down
+  if (p < r) {               // Base case
+    q = floor((p + r) / 2);  // the result is rounded down
     Msort::mergeSort(array, p, q);
     Msort::mergeSort(array, q + 1, r);
     Msort::merge(array, p, q, r);
