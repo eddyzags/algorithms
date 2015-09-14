@@ -26,7 +26,7 @@ how implement them in C++. (Lot of comments are available)
 -   [Merge sort](https://github.com/eddyzags/algorithms/tree/master/sorting/merge_sort)
 -   [Quick sort](https://github.com/eddyzags/algorithms/tree/master/sorting/quick_sort)
 -   [Selection sort](https://github.com/eddyzags/algorithms/tree/master/sorting/selection_sort)
--   [Binary search](https://github.com/eddyzags/algorithms/tree/master/searching/binary_search\)
+-   [Binary search](https://github.com/eddyzags/algorithms/tree/master/searching/binary_search)
 
 # TODO :<a id="sec-4" name="sec-4"></a>
 
